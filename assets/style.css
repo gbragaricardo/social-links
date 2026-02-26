@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --bg-dark: rgb(16,16,16);
+    --bg-main: rgb(32, 32, 32);
+    --card-bg: rgb(64, 64, 64);
+    --card-hover: rgb(211, 211, 211);
+    --accent-color: yellowgreen;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 90%;
+    max-width: 380px;
+    padding: 1rem;
+    color: white;
+    background-color: var(--bg-main);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.city {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.resume {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.list-card {
+    background-color: var(--card-bg);
+    text-align: center;
+    display: block;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.list-card:hover {
+    background-color: var(--card-hover);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
